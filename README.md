@@ -54,6 +54,8 @@ Lot 3 is statisticially similar to the population, as depicted by the p-value of
 ___
 ## Resources
 _Data Sources_:
+https://github.com/SJLewer/MechaCar_Statistical_Analysis/blob/main/MechaCar_mpg.csv
+
 
 _RStudio Script_: https://github.com/SJLewer/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R
 
