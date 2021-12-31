@@ -25,7 +25,22 @@ _Individual lots:_  As shown below, Lots 1 and 2 meet the design specifications 
 ![Lot PSI Summary](https://user-images.githubusercontent.com/90986041/147831966-10fc9ec8-92ea-4d39-8d1e-69fa25a742b7.png)
 
 ## T-Tests on Suspension Coils
-briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+Hypothesis of a one-sample t-test:  There is no statistical difference between the sample mean and the population mean.
+
+_Overall:_ The p-value (0.98) is above the common 0.05; there is not sufficient evidence to reject the hypothesis.  The means of the sample (50) and population are statistically similar.
+
+![T Test Overall](https://user-images.githubusercontent.com/90986041/147833457-c11caf2e-2e15-4af9-8806-6218755c2f98.png)
+
+_Individual Lots:_ Using a sample size of 25 from each Lot, how do the Lot means compare to the population?
+
+Lots 1 and 2 are statistically different than the population.  The low p-values (below 0.05) indicate there is sufficient evidence to reject the hypothesis. 
+
+![T Test Lot 1](https://user-images.githubusercontent.com/90986041/147834368-ebbc1b7a-f01d-42c0-83ee-6e44b1e6dec8.png)
+![T Test Lot 2](https://user-images.githubusercontent.com/90986041/147834370-ee9bfc5e-4403-4a38-90a4-59c78b3d4fd0.png)
+
+Lot 3 is statisticially similar to the population, as depicted by the p-value of 0.88 (above 0.05). 
+
+![T Test Lot 3](https://user-images.githubusercontent.com/90986041/147834615-1772dc64-22a2-42c3-b2ae-9cd8e9ca4e63.png)
 
 
 ___
