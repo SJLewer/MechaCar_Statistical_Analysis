@@ -4,6 +4,8 @@
 Use statistical analysis to gain insight for the manufacturing team to address AutosRUs prototype production issues.
 
 ## Linear Regression to Predict MPG
+Hypothesis:  The slope of the linear model is zero.  Meaning, there is no significant linear relationship and each dependent value would be determined by random chance and error.
+
 ![linear regression](https://user-images.githubusercontent.com/90986041/147829110-e48d3283-5b9f-4d6b-8e0e-a5426c1d25da.png)
 
 1. _Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?_ Vehicle length, ground clearance, and the intercept have a signficiant impact on MPG. (Green highlights)
@@ -42,6 +44,12 @@ Lot 3 is statisticially similar to the population, as depicted by the p-value of
 
 ![T Test Lot 3](https://user-images.githubusercontent.com/90986041/147834615-1772dc64-22a2-42c3-b2ae-9cd8e9ca4e63.png)
 
+## Study Design: MechaCar vs Competition
+
+1. Metric(s) to test
+2. Null or alternative hypothesis
+3. Statistical test to use and why
+4. Data needed to run the statistical test
 
 ___
 ## Resources
