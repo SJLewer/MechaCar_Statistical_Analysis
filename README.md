@@ -12,7 +12,8 @@ Use statistical analysis to gain insight for the manufacturing team to address A
 
 3. _Does this linear model predict mpg of MechaCar prototypes effectively?_ Yes, the r-squared value (0.71) highlighted in purple indicates 71% probability the regression model approximates the data points. Additionally, the p-value (5.35e-11) highlighted in yellow is significant.
 
-### Summary Statistics on Suspension Coils
+## Summary Statistics on Suspension Coils
+
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 
