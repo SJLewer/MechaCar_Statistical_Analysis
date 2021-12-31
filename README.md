@@ -16,11 +16,11 @@ Use statistical analysis to gain insight for the manufacturing team to address A
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
 
-Overall:  As shown below, the variance (62.3) meets the design specification for all manufacturing lots in total. The low standard deviation (7.9) further supports the manufacturing lots overall meet the design specifications.
+_Overall:_  As shown below, the variance (62.3) meets the design specification for all manufacturing lots in total. The low standard deviation (7.9) further supports the manufacturing lots overall meet the design specifications.
 
 ![Total PSI summary](https://user-images.githubusercontent.com/90986041/147831873-7a9e2bef-d7fd-4c19-8821-ccb4f8577f97.png)
 
-Individual lots:  As shown below, Lots 1 and 2 meet the design specifications with very low variability whereas Lot 3 does not meet the specifications (variance of 170.3 and standard deviation of 13).
+_Individual lots:_  As shown below, Lots 1 and 2 meet the design specifications with very low variability whereas Lot 3 does not meet the specifications (variance of 170.3 and standard deviation of 13).
 
 ![Lot PSI Summary](https://user-images.githubusercontent.com/90986041/147831966-10fc9ec8-92ea-4d39-8d1e-69fa25a742b7.png)
 
