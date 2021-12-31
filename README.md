@@ -46,11 +46,23 @@ HYPOTHESIS:  There is no statistical difference between the sample mean and the 
 
 ## Study Design: MechaCar vs Competition
 
-1. Metric(s) to test
-2. Null or alternative hypothesis
-3. Statistical test to use and why
-4. Data needed to run the statistical test
+1. Metric to test: Reliability as measured by maintenance ratings.  Is there a statistical difference between the distribution means from multiple samples?
 
+2. Null or alternative hypothesis:
+* Null Hypothesis: The means of all groups are equal.
+* Alternative Hypothesis:  At least one of the means are different from all other groups.
+ 
+3. Statistical test:  One-way analysis of variance (ANOVA) is used to compare the means of a continuous numerical variable (e.g., maintenance rating) across a number of groups (e.g., car manufacturers).
+
+* Assumptions:
+  a) The dependent variable is numerical and continuous, and the independent variables are categorical
+  b) The dependent variable is considered to be normally distributed
+  c) The variance among the group shoudl be very similar
+
+4. Data needed to run an ANOVA statistical test:
+* Identify vehicle types made by MechaCar and randomly select samples of similar vehicle types made by other manufacturers.
+* Create a single dataframe of the data sets, including vehicle type, manufacturer, and maintenance rating.
+ 
 ___
 ## Resources
 _Data Sources_:
