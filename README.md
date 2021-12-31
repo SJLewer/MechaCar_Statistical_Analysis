@@ -55,6 +55,6 @@ ___
 ## Resources
 _Data Sources_:
 
-_RStudio Script_: 
+_RStudio Script_: https://github.com/SJLewer/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R
 
 _Analyst_: S. Lewer
