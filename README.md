@@ -4,7 +4,7 @@
 Use statistical analysis to gain insight for the manufacturing team to address AutosRUs prototype production issues.
 
 ## Linear Regression to Predict MPG
-HYPOTHESIS: The slope of the linear model is zero.  Meaning, there is no significant linear relationship and each dependent value would be determined by random chance and error.
+NULL HYPOTHESIS: The slope of the linear model is zero.  Meaning, there is no significant linear relationship and each dependent value would be determined by random chance and error.
 
 RESULTS: 
 
@@ -29,7 +29,7 @@ The design specifications for the MechaCar suspension coils dictate that the var
   ![Lot PSI Summary](https://user-images.githubusercontent.com/90986041/147831966-10fc9ec8-92ea-4d39-8d1e-69fa25a742b7.png)
 
 ## T-Tests on Suspension Coils
-HYPOTHESIS:  There is no statistical difference between the sample mean and the population mean.
+NULL HYPOTHESIS:  There is no statistical difference between the sample mean and the population mean.
 
 * _Overall:_ The p-value (0.98) is above the common 0.05; there is not sufficient evidence to reject the hypothesis.  The means of the sample (50) and population are statistically similar.
 
@@ -51,32 +51,32 @@ HYPOTHESIS:  There is no statistical difference between the sample mean and the 
 1. _Metric to test:_ Reliability as measured by maintenance ratings.  Is there a statistical difference between the distribution means from multiple samples?
 
 2. _Hypotheses:_
-  * Null Hypothesis: The means of all groups are equal.
+    - Null Hypothesis: The means of all groups are equal.
   
-  * Alternative Hypothesis:  At least one of the means are different from all other groups.
+    - Alternative Hypothesis:  At least one of the means are different from all other groups.
  
 3. _Statistical test:_  One-way analysis of variance (ANOVA) is used to compare the means of a continuous numerical variable (e.g., maintenance rating) across a number of groups (e.g., car manufacturers).
 
-  * Assumptions:
+    - Assumptions:
   
-    a) The dependent variable is numerical and continuous, and the independent variables are categorical
+      -The dependent variable is numerical and continuous, and the independent variables are categorical
   
-    b) The dependent variable is considered to be normally distributed
+      -The dependent variable is considered to be normally distributed
     
-    c) The variance among the group shoudl be very similar
+      -The variance among the group shoudl be very similar
 
 4. _Data needed to run an ANOVA statistical test:_
 
-  * Identify vehicle types made by MechaCar and randomly select samples of similar vehicle types made by other manufacturers.
+    - Identify vehicle types made by MechaCar and randomly select samples of similar vehicle types made by other manufacturers.
   
-  * Create a single dataframe of the data sets, including vehicle type, manufacturer, and maintenance rating.
+    - Create a single dataframe of the data sets, including vehicle type, manufacturer, and maintenance rating.
  
 ___
 ## Resources
 _Data Sources_:
 
-https://github.com/SJLewer/MechaCar_Statistical_Analysis/blob/main/MechaCar_mpg.csv
-https://github.com/SJLewer/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv
+ - https://github.com/SJLewer/MechaCar_Statistical_Analysis/blob/main/MechaCar_mpg.csv
+ - https://github.com/SJLewer/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv
 
 _RStudio Script_: https://github.com/SJLewer/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R
 
