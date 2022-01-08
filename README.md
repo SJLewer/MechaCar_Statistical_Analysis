@@ -13,7 +13,7 @@ RESULTS:
 
 2. _Is the slope of the linear model considered to be zero?_ No. Because the intercept is statistically significant (less than 0.05), it means the intercept term explains a signficiant amount of variability in the dependent variable (MPG) when all independent variables are equal to zero. Additionally, the p-value (highlighted in yellow) is much smaller than the assumed significance level of 0.05. Therefore, there is sufficient evidence that the slope of the linear model is not zero.
 
-3. _Does this linear model predict mpg of MechaCar prototypes effectively?_ Yes, the r-squared value (0.71) highlighted in purple indicates 71% probability the regression model approximates the data points. Additionally, as noted in #2 above, the p-value is significant.
+3. _Does this linear model predict mpg of MechaCar prototypes effectively?_ Yes, the r-squared value (0.71) highlighted in purple indicates 71% probability the regression model approximates the data points. Additionally, as noted in #2 above, the p-value is significant, which indicates a very low probabilty the results of the model are due to random happenstance.
 
 ## Summary Statistics on Suspension Coils
 
@@ -30,31 +30,31 @@ The design specifications for the MechaCar suspension coils dictate that the var
 ## T-Tests on Suspension Coils
 NULL HYPOTHESIS:  There is no statistical difference between the sample mean and the population mean.
 
-* _Overall:_ The p-value (0.98) is above the common 0.05; there is not sufficient evidence to reject the hypothesis.  The means of the sample (50) and population are statistically similar.
+* _Overall:_ The p-value (0.98) is above the common 0.05; there is not sufficient evidence to reject the null hypothesis.
 
   ![T Test Overall](https://user-images.githubusercontent.com/90986041/147833457-c11caf2e-2e15-4af9-8806-6218755c2f98.png)
 
 * _Individual Lots:_ Using a sample size of 25 from each Lot, how do the Lot means compare to the population?
 
-  Lots 1 and 2 are statistically different than the population.  The low p-values (below 0.05) indicate there is sufficient evidence to reject the hypothesis. 
+  Lots 1 and 2 are statistically different than the population.  The low p-values (below 0.05) indicate there is sufficient evidence to reject the null hypothesis. 
 
   ![T Test Lot 1](https://user-images.githubusercontent.com/90986041/147834368-ebbc1b7a-f01d-42c0-83ee-6e44b1e6dec8.png)
   ![T Test Lot 2](https://user-images.githubusercontent.com/90986041/147834370-ee9bfc5e-4403-4a38-90a4-59c78b3d4fd0.png)
 
-  Lot 3 is statisticially similar to the population, as depicted by the p-value of 0.88 (above 0.05). 
+  Lot 3, as depicted by the p-value of 0.88 (above 0.05), there is not sufficient evidence to reject the null hypothesis.
 
   ![T Test Lot 3](https://user-images.githubusercontent.com/90986041/147834615-1772dc64-22a2-42c3-b2ae-9cd8e9ca4e63.png)
 
 ## Study Design: MechaCar vs Competition
 
-1. _Metric to test:_ Reliability as measured by maintenance ratings.  Is there a statistical difference between the distribution means from multiple samples?
+1. _Metric to test:_ Reliability as measured by maintenance ratings.  Is there a statistical difference between the average maintenance ratings of MechaCar models from simlar models of the competitors (e.g., Ford, GM, Toyota, etc.)?
 
 2. _Hypotheses:_
     - Null Hypothesis: The means of all groups are equal.
   
     - Alternative Hypothesis:  At least one of the means are different from all other groups.
  
-3. _Statistical test:_  One-way analysis of variance (ANOVA) is used to compare the means of a continuous numerical variable (e.g., maintenance rating) across a number of groups (e.g., car manufacturers).
+3. _Statistical test:_  One-way analysis of variance (ANOVA) is used to determine if there is a statistical difference between the distribution means from multiple samples.
 
     - Assumptions:
   
@@ -62,12 +62,12 @@ NULL HYPOTHESIS:  There is no statistical difference between the sample mean and
   
       -The dependent variable is considered to be normally distributed
     
-      -The variance among the group shoudl be very similar
+      -The variance among the group should be very similar
 
 4. _Data needed to run an ANOVA statistical test:_
 
-    - Identify vehicle types made by MechaCar and randomly select samples of similar vehicle types made by other manufacturers.
-  
+    - Identify model types made by MechaCar and randomly select samples of similar vehicle models made by other manufacturers.
+      
     - Create a single dataframe of the data sets, including vehicle type, manufacturer, and maintenance rating.
  
 ___
