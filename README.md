@@ -4,15 +4,14 @@
 Use statistical analysis to gain insight for the manufacturing team to address AutosRUs prototype production issues.
 
 ## Linear Regression to Predict MPG
-NULL HYPOTHESIS: The slope of the linear model is zero.  Meaning, there is no significant linear relationship and each dependent value would be determined by random chance and error.
 
 RESULTS: 
 
   ![linear regression](https://user-images.githubusercontent.com/90986041/147829110-e48d3283-5b9f-4d6b-8e0e-a5426c1d25da.png)
 
-1. _Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?_ Vehicle length, ground clearance, and the intercept have a signficiant impact on MPG. (Green highlights)
+1. _Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?_ Vehicle length, ground clearance, and the intercept have a signficiant, non-random impact on MPG. (Green highlights)
 
-2. _Is the slope of the linear model considered to be zero?_ No. Because the intercept is statistically significant, it means the intercept term explains a signficiant amount of variability in the dependent variable (MPG) when all independent variables are equal to zero. Additionally, the p-value (highlighted in yellow) is much smaller than the assumed significance level of 0.05%. Therefore, there is sufficient evidence to reject the hypothesis above, meaning the slope of the linear model is not zero.
+2. _Is the slope of the linear model considered to be zero?_ No. Because the intercept is statistically significant (less than 0.05), it means the intercept term explains a signficiant amount of variability in the dependent variable (MPG) when all independent variables are equal to zero. Additionally, the p-value (highlighted in yellow) is much smaller than the assumed significance level of 0.05. Therefore, there is sufficient evidence that the slope of the linear model is not zero.
 
 3. _Does this linear model predict mpg of MechaCar prototypes effectively?_ Yes, the r-squared value (0.71) highlighted in purple indicates 71% probability the regression model approximates the data points. Additionally, as noted in #2 above, the p-value is significant.
 
