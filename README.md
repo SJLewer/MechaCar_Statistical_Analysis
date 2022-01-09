@@ -3,7 +3,7 @@
 ## Purpose
 Use statistical analysis to gain insight for the manufacturing team to address AutosRUs prototype production issues.
 
-## Linear Regression to Predict MPG
+### Linear Regression to Predict MPG
 
 RESULTS: 
 
@@ -15,7 +15,7 @@ RESULTS:
 
 3. _Does this linear model predict mpg of MechaCar prototypes effectively?_ Yes, the r-squared value (0.71) highlighted in purple indicates 71% probability the regression model approximates the data points. Additionally, as noted in #2 above, the p-value is significant, which indicates a very low probabilty the results of the model are due to random happenstance.
 
-## Summary Statistics on Suspension Coils
+### Summary Statistics on Suspension Coils
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
 
@@ -27,10 +27,10 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
   ![Lot PSI Summary](https://user-images.githubusercontent.com/90986041/147831966-10fc9ec8-92ea-4d39-8d1e-69fa25a742b7.png)
 
-## T-Tests on Suspension Coils
+### T-Tests on Suspension Coils
 NULL HYPOTHESIS:  There is no statistical difference between the sample mean and the population mean.
 
-* _Overall:_ The p-value (0.98) is above the common 0.05; there is not sufficient evidence to reject the null hypothesis.
+* _Overall:_ The p-value (0.98) is above the 0.05 level of significance.   There is not enough evidence to reject the null hypothesis.
 
   ![T Test Overall](https://user-images.githubusercontent.com/90986041/147833457-c11caf2e-2e15-4af9-8806-6218755c2f98.png)
 
@@ -41,35 +41,28 @@ NULL HYPOTHESIS:  There is no statistical difference between the sample mean and
   ![T Test Lot 1](https://user-images.githubusercontent.com/90986041/147834368-ebbc1b7a-f01d-42c0-83ee-6e44b1e6dec8.png)
   ![T Test Lot 2](https://user-images.githubusercontent.com/90986041/147834370-ee9bfc5e-4403-4a38-90a4-59c78b3d4fd0.png)
 
-  Lot 3, as depicted by the p-value of 0.88 (above 0.05), there is not sufficient evidence to reject the null hypothesis.
+  Lot 3, as depicted by the p-value of 0.88 (above 0.05 level of significance), there is not sufficient evidence to reject the null hypothesis.
 
   ![T Test Lot 3](https://user-images.githubusercontent.com/90986041/147834615-1772dc64-22a2-42c3-b2ae-9cd8e9ca4e63.png)
 
-## Study Design: MechaCar vs Competition
+### Study Design: MechaCar vs Competition
 
 1. _Metric to test:_ Reliability as measured by maintenance ratings.  Is there a statistical difference between the average maintenance ratings of MechaCar models from simlar models of the competitors (e.g., Ford, GM, Toyota, etc.)?
 
 2. _Hypotheses:_
-    - Null Hypothesis: The means of all groups are equal.
+    - Null Hypothesis: The means (average maintenance ratings) of all groups (manufacturers) are equal.
   
-    - Alternative Hypothesis:  At least one of the means are different from all other groups.
+    - Alternative Hypothesis:  At least one of the means (average maintenance ratings) is different from all other groups (manufacturers).
  
-3. _Statistical test:_  One-way analysis of variance (ANOVA) is used to determine if there is a statistical difference between the distribution means from multiple samples.
-
-    - Assumptions:
-  
-      -The dependent variable is numerical and continuous, and the independent variables are categorical
-  
-      -The dependent variable is considered to be normally distributed
-    
-      -The variance among the group should be very similar
+3. _Statistical test:_ One-way analysis of variance (ANOVA) is used when comparing the means of more than two groups.
 
 4. _Data needed to run an ANOVA statistical test:_
-
-    - Identify model types made by MechaCar and randomly select samples of similar vehicle models made by other manufacturers.
-      
-    - Create a single dataframe of the data sets, including vehicle type, manufacturer, and maintenance rating.
- 
+    - The dependent variable must be a continuous (interval or ratio) level of measurement. 
+    - The independent variables must be categorical (nominal or ordinal) variables. 
+    - Assumptions:
+      - The data is normally distributed.  
+      - The variance among the groups should be approximately equal. 
+      - The observations are independent of each other. 
 ___
 ## Resources
 _Data Sources_:
