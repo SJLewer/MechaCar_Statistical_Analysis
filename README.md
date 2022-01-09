@@ -28,6 +28,8 @@ The design specifications for the MechaCar suspension coils dictate that the var
   ![Lot PSI Summary](https://user-images.githubusercontent.com/90986041/147831966-10fc9ec8-92ea-4d39-8d1e-69fa25a742b7.png)
 
 ### T-Tests on Suspension Coils
+Determine if all manufacturing lots and each lot individually are statistically different than the population mean of 1,500 pounds per square inch.
+
 NULL HYPOTHESIS:  There is no statistical difference between the sample mean and the population mean.
 
 * _Overall:_ The p-value (0.98) is above the 0.05 level of significance.   There is not enough evidence to reject the null hypothesis.
@@ -36,13 +38,13 @@ NULL HYPOTHESIS:  There is no statistical difference between the sample mean and
 
 * _Individual Lots:_ Using a sample size of 25 from each Lot, how do the Lot means compare to the population?
 
-  Lots 1 and 2 are statistically different than the population.  The low p-values (below 0.05) indicate there is sufficient evidence to reject the null hypothesis. 
+   - Lots 1 and 2 are statistically different than the population.  The low p-values (below 0.05) indicate there is sufficient evidence to reject the null hypothesis. 
 
   ![T Test Lot 1](https://user-images.githubusercontent.com/90986041/147834368-ebbc1b7a-f01d-42c0-83ee-6e44b1e6dec8.png)
   ![T Test Lot 2](https://user-images.githubusercontent.com/90986041/147834370-ee9bfc5e-4403-4a38-90a4-59c78b3d4fd0.png)
 
-  Lot 3, as depicted by the p-value of 0.88 (above 0.05 level of significance), there is not sufficient evidence to reject the null hypothesis.
-
+  - Lot 3: There is not sufficient evidence to reject the null hypothesis, as depicted by the p-value of 0.88 (above 0.05 level of significance).
+  
   ![T Test Lot 3](https://user-images.githubusercontent.com/90986041/147834615-1772dc64-22a2-42c3-b2ae-9cd8e9ca4e63.png)
 
 ### Study Design: MechaCar vs Competition
