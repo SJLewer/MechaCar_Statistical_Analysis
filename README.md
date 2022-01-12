@@ -32,20 +32,21 @@ Determine if all manufacturing lots and each lot individually are statistically 
 
 NULL HYPOTHESIS:  There is no statistical difference between the sample mean and the population mean.
 
-* _Overall:_ The p-value (0.98) is above the 0.05 level of significance.   There is not enough evidence to reject the null hypothesis.
+* _Overall:_ The p-value (0.06) is above the 0.05 level of significance.  There is not enough evidence to reject the null hypothesis.
 
-  ![T Test Overall](https://user-images.githubusercontent.com/90986041/147833457-c11caf2e-2e15-4af9-8806-6218755c2f98.png)
+  ![T Test Overall 2](https://user-images.githubusercontent.com/90986041/149058561-d76c45e4-3e92-4e0c-bcb0-a1a2440a9ce0.png)
 
-* _Individual Lots:_ Using a sample size of 25 from each Lot, how do the Lot means compare to the population?
+* _Individual Lots:_ How do the Lot means compare to the population?
 
-   - Lots 1 and 2 are statistically different than the population.  The low p-values (below 0.05) indicate there is sufficient evidence to reject the null hypothesis. 
+   - Lots 1 and 2: The p-values for both lots are above the 0.05 level of significance.  There is not enough evidence to reject the null hypothesis.
+   
+       ![T Test Lot 1 2](https://user-images.githubusercontent.com/90986041/149058713-81c9c802-b410-498a-a87e-88721d4357cd.png)
 
-  ![T Test Lot 1](https://user-images.githubusercontent.com/90986041/147834368-ebbc1b7a-f01d-42c0-83ee-6e44b1e6dec8.png)
-  ![T Test Lot 2](https://user-images.githubusercontent.com/90986041/147834370-ee9bfc5e-4403-4a38-90a4-59c78b3d4fd0.png)
+       ![T Test Lot 2 2](https://user-images.githubusercontent.com/90986041/149058731-5c706b6c-e71a-45e7-b491-37e711b7fd1c.png)
 
-  - Lot 3: There is not sufficient evidence to reject the null hypothesis, as depicted by the p-value of 0.88 (above 0.05 level of significance).
-  
-  ![T Test Lot 3](https://user-images.githubusercontent.com/90986041/147834615-1772dc64-22a2-42c3-b2ae-9cd8e9ca4e63.png)
+  - Lot 3: The p-value of 0.04 is below the .05 level of significance; therefore, there is evidence to reject the null hypothesis.
+    
+    ![T Test Lot 3 2](https://user-images.githubusercontent.com/90986041/149058756-f872e0cc-29c2-49ce-958a-933046b0ec2a.png)
 
 ### Study Design: MechaCar vs Competition
 
